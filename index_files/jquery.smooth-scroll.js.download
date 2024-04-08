@@ -1,0 +1,51 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+/**
+ * Created by Chris E Orlando on 10/10/2014.
+ */
+jQuery(function($) {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top - 95
+                }, 1000);
+                return false;
+            }
+        }
+    });
+})(jQuery);
+
+}
+/*
+     FILE ARCHIVED ON 05:00:01 Sep 27, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:13:31 Apr 08, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1.003
+  exclusion.robots: 0.12
+  exclusion.robots.policy: 0.105
+  cdx.remote: 0.094
+  esindex: 0.014
+  LoadShardBlock: 49.17 (3)
+  PetaboxLoader3.datanode: 36.132 (4)
+  PetaboxLoader3.resolve: 44.573 (2)
+  load_resource: 35.567
+*/

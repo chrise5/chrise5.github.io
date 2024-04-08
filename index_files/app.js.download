@@ -1,0 +1,73 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+;(function ($, window, undefined) {
+  'use strict';
+
+  var $doc = $(document),
+      Modernizr = window.Modernizr;
+
+  $(document).ready(function() {
+    $.fn.foundationAlerts           ? $doc.foundationAlerts() : null;
+    $.fn.foundationButtons          ? $doc.foundationButtons() : null;
+    $.fn.foundationAccordion        ? $doc.foundationAccordion() : null;
+    $.fn.foundationNavigation       ? $doc.foundationNavigation() : null;
+    $.fn.foundationTopBar           ? $doc.foundationTopBar() : null;
+    $.fn.foundationCustomForms      ? $doc.foundationCustomForms() : null;
+    $.fn.foundationMediaQueryViewer ? $doc.foundationMediaQueryViewer() : null;
+    $.fn.foundationTabs             ? $doc.foundationTabs({callback : $.foundation.customForms.appendCustomMarkup}) : null;
+    $.fn.foundationTooltips         ? $doc.foundationTooltips() : null;
+    $.fn.foundationMagellan         ? $doc.foundationMagellan() : null;
+    $.fn.foundationClearing         ? $doc.foundationClearing() : null;
+
+    $.fn.placeholder                ? $('input, textarea').placeholder() : null;
+  });
+
+  // UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids
+  // $('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'both'});
+  // $('.block-grid.three-up>li:nth-child(3n+1)').css({clear: 'both'});
+  // $('.block-grid.four-up>li:nth-child(4n+1)').css({clear: 'both'});
+  // $('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'both'});
+
+  // Hide address bar on mobile devices (except if #hash present, so we don't mess up deep linking).
+  if (Modernizr.touch && !window.location.hash) {
+    $(window).load(function () {
+      setTimeout(function () {
+        window.scrollTo(0, 1);
+      }, 0);
+    });
+  }
+
+})(jQuery, this);
+
+
+}
+/*
+     FILE ARCHIVED ON 15:51:51 Jun 15, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:13:31 Apr 08, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 2.48
+  exclusion.robots: 0.069
+  exclusion.robots.policy: 0.06
+  cdx.remote: 0.058
+  esindex: 0.008
+  LoadShardBlock: 123.976 (3)
+  PetaboxLoader3.datanode: 445.885 (5)
+  PetaboxLoader3.resolve: 121.842 (3)
+  load_resource: 473.708 (2)
+*/
